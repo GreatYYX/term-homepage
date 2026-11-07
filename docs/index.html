@@ -26,10 +26,14 @@
 
     <!-- icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@master/css/academicons.min.css" rel="stylesheet">
 
     <!-- style -->
     <link rel="stylesheet" href="style.css">
+    <!-- apply the saved theme before the page is drawn (avoids a dark flash in light mode) -->
+    <script>
+      if (localStorage.getItem("theme-mode") === "light") document.documentElement.setAttribute("data-theme", "light");
+    </script>
   </head>
   <body>
 
@@ -58,13 +62,13 @@
                 <p>Over the years, I’ve spent time working at inspiring startups, industrial-leading big techs, and cutting-edge research institutions. I’m into all things AI, especially privacy and security in AI. But hey, AI isn’t meant to stay in a box -> Neither am I.</p>
                 <p>When I’m away from the keyboard, you’ll probably find me snowboarding, bouldering, riding my motorcycle, fixing cars, or getting my hands dirty with DIY projects.</p>
                 <p>
-                  <a href="https://scholar.google.com/citations?user=ZAtjnPAAAAAJ&hl=en" class="btn-link"><i class="ai fa-lg ai-google-scholar-square"></i></a>
-                  <a href="https://orcid.org/0000-0002-2471-5591" class="btn-link"><i class="ai fa-lg ai-orcid"></i></a>
-                  <a href="https://github.com/greatyyx" class="btn-link"><i class="fab fa-lg fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/yxyao/" class="btn-link"><i class="fab fa-lg fa-linkedin"></i></a>
+                  <a href="https://scholar.google.com/citations?user=ZAtjnPAAAAAJ&hl=en" class="btn-link" aria-label="Google Scholar"><i class="ai fa-lg ai-google-scholar-square"></i></a>
+                  <a href="https://orcid.org/0000-0002-2471-5591" class="btn-link" aria-label="ORCID"><i class="ai fa-lg ai-orcid"></i></a>
+                  <a href="https://github.com/greatyyx" class="btn-link" aria-label="GitHub"><i class="fab fa-lg fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/yxyao/" class="btn-link" aria-label="LinkedIn"><i class="fab fa-lg fa-linkedin"></i></a>
                 </p>
               </div>
-              <div class="col col-12 col-lg-4" id="profile-picture"></div>
+              <div class="col col-12 col-lg-4 text-left text-lg-right"><div id="profile-picture"></div></div>
             </div><!--row-->
           </div>
 
@@ -75,8 +79,8 @@
                 <span class="pub-title">Fairly Compensated Distributed Information Retrieval and Augmentation for AI Agents </span><br>
                 <span class="pub-author"><span class="pub-author-me">Yixiang Yao</span>, Pasha Barahimi, and Srivatsan Ravi.</span><br>
                 <span class="pub-book">arXiv:2609.22601</span><br>
-                <a href="https://arxiv.org/abs/2609.22601" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-yao2026fairly" aria-expanded="false" aria-controls="pub-bib-yao2026fairly" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="https://arxiv.org/abs/2609.22601" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-yao2026fairly" aria-expanded="false" aria-controls="pub-bib-yao2026fairly" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-yao2026fairly">
                   <pre class="pub-bib">@misc{yao2026fairlycompensateddistributedinformation,
       title={Fairly Compensated Distributed Information Retrieval and Augmentation for AI Agents}, 
@@ -93,8 +97,8 @@
                 <span class="pub-title">Privacy-preserving Language Model Inference with Instance Obfuscation</span><br>
                 <span class="pub-author"><span class="pub-author-me">Yixiang Yao</span>, Fei Wang, Srivatsan Ravi, and Muhao Chen.</span><br>
                 <span class="pub-book">arXiv:2402.08227</span><br>
-                <a href="https://arxiv.org/abs/arXiv:2402.08227" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-yao2024privacypreservinglanguagemodelinference" aria-expanded="false" aria-controls="pub-bib-yao2024privacypreservinglanguagemodelinference" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="https://arxiv.org/abs/arXiv:2402.08227" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-yao2024privacypreservinglanguagemodelinference" aria-expanded="false" aria-controls="pub-bib-yao2024privacypreservinglanguagemodelinference" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-yao2024privacypreservinglanguagemodelinference">
                   <pre class="pub-bib">@misc{yao2024privacypreservinglanguagemodelinference,
       title={Privacy-Preserving Language Model Inference with Instance Obfuscation}, 
@@ -111,8 +115,8 @@
                 <span class="pub-title">Evaluating the Feasibility of a Provably Secure Privacy-Preserving Entity Resolution Adaptation of PPJoin using Homomorphic Encryption</span><br>
                 <span class="pub-author">Tanmay Ghai, <span class="pub-author-me">Yixiang Yao</span>, Srivatsan Ravi, and Pedro Szekely.</span><br>
                 <span class="pub-book">arXiv:2208.07999</span><br>
-                <a href="https://arxiv.org/abs/2208.07999" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-ghai2022evaluating" aria-expanded="false" aria-controls="pub-bib-ghai2022evaluating" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="https://arxiv.org/abs/2208.07999" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-ghai2022evaluating" aria-expanded="false" aria-controls="pub-bib-ghai2022evaluating" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-ghai2022evaluating">
                   <pre class="pub-bib">@misc{ghai2022evaluating,
       title={Evaluating the Feasibility of a Provably Secure Privacy-Preserving Entity Resolution Adaptation of PPJoin using Homomorphic Encryption}, 
@@ -135,8 +139,8 @@
                 <span class="pub-author"><span class="pub-author-me">Yixiang Yao</span>, Weizhao Jin, Shanshan Han, Yuhang Yao, Carlee Joe-Wong and Srivatsan Ravi.</span><br>
                 <span class="pub-book">In Proceedings of the 35th ACM International Conference on Information & Knowledge Management.</span><br>
                 <span class="pub-date">CIKM 2026.</span>
-                <!-- <a href="https://dl.acm.org/doi/10.1145/3770855.3818655" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-yao2026hide" aria-expanded="false" aria-controls="pub-bib-yao2026hide" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <!-- <a href="https://dl.acm.org/doi/10.1145/3770855.3818655" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-yao2026hide" aria-expanded="false" aria-controls="pub-bib-yao2026hide" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-yao2026hide">
                   <pre class="pub-bib"></pre>
                 </div> -->
@@ -146,11 +150,11 @@
                 <span class="pub-author"><span class="pub-author-me">Yixiang Yao</span>, Yuhang Yao, Xinyi Fan, Jiechao Gao, Jie Wang, Minjia Zhang, Srivatsan Ravi, and Carlee Joe-Wong.</span><br>
                 <span class="pub-book">In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining.</span><br>
                 <span class="pub-date">SIGKDD 2026.</span>
-                <a href="https://dl.acm.org/doi/10.1145/3770855.3818655" class="btn-link" title="KDD short version"><i class="fa fa-file-alt"></i></a>
-                <a href="https://eprint.iacr.org/2026/497.pdf" class="btn-link" title="Full version"><i class="fas fa-file-archive"></i></a>
-                <a href="https://github.com/GreatYYX/trustworthy_agent_network" class="btn-link"><i class="fab fa-github"></i></a>
-                <a href="https://greatyyx.github.io/trustworthy_agent_network" class="btn-link"><i class="fas fa-globe"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-yao2026kddtrustworthy" aria-expanded="false" aria-controls="pub-bib-yao2026kddtrustworthy" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="https://dl.acm.org/doi/10.1145/3770855.3818655" class="btn-link" title="KDD short version" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a href="https://eprint.iacr.org/2026/497.pdf" class="btn-link" title="Full version" aria-label="Full version"><i class="fas fa-file-archive"></i></a>
+                <a href="https://github.com/GreatYYX/trustworthy_agent_network" class="btn-link" aria-label="Code"><i class="fab fa-github"></i></a>
+                <a href="https://greatyyx.github.io/trustworthy_agent_network" class="btn-link" aria-label="Website"><i class="fas fa-globe"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-yao2026kddtrustworthy" aria-expanded="false" aria-controls="pub-bib-yao2026kddtrustworthy" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-yao2026kddtrustworthy">
                   <pre class="pub-bib">@inproceedings{10.1145/3770855.3818655,
   author = {Yao, Yixiang and Yao, Yuhang and Fan, Xinyi and Gao, Jiechao and Wang, Jie and Zhang, Minjia and Ravi, Srivatsan and Joe-Wong, Carlee},
@@ -175,8 +179,8 @@
                 <span class="pub-author"><span class="pub-author-me">Yixiang Yao</span>, Joseph Cecil, Praveen Angyan, Neil Bahroos, and Srivatsan Ravi.</span><br>
                 <span class="pub-book">In Proceedings of 2025 IEEE International Conference on Big Data.</span><br>
                 <span class="pub-date">BigData 2025.</span>
-                <a href="publications/yao2025feasibility.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-yao2025feasibility" aria-expanded="false" aria-controls="pub-bib-yao2025feasibility" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/yao2025feasibility.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-yao2025feasibility" aria-expanded="false" aria-controls="pub-bib-yao2025feasibility" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-yao2025feasibility">
                   <pre class="pub-bib">@inproceedings{yao2025feasibility,
   title={Feasibility of Privacy-Preserving Entity Resolution on Confidential Healthcare Datasets Using Homomorphic Encryption},
@@ -193,8 +197,8 @@
                 <span class="pub-author"><span class="pub-author-me">Yixiang Yao</span>, Weizhao Jin, and Srivatsan Ravi.</span><br>
                 <span class="pub-book">2025 Transactions on Machine Learning Research.</span><br>
                 <span class="pub-date">TMLR 2025.</span>
-                <a href="https://openreview.net/pdf?id=bAM8y3Hm0p" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-yao2025labeling" aria-expanded="false" aria-controls="pub-bib-yao2025labeling" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="https://openreview.net/pdf?id=bAM8y3Hm0p" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-yao2025labeling" aria-expanded="false" aria-controls="pub-bib-yao2025labeling" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-yao2025labeling">
                   <pre class="pub-bib">@article{yao2025labeling,
   title={Labeling without Seeing? Blind Annotation for Privacy-Preserving Entity Resolution},
@@ -212,8 +216,8 @@
                 <span class="pub-author">Tanmay Ghai*, <span class="pub-author-me">Yixiang Yao*</span>, and Srivatsan Ravi.</span><br>
                 <span class="pub-book">In Proceedings of 2023 IEEE European Symposium on Security and Privacy Workshops.</span><br>
                 <span class="pub-date">EuroS&PW 2023.</span>
-                <a href="publications/ghai2023lessons.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-ghai2023lessons" aria-expanded="false" aria-controls="pub-bib-ghai2023lessons" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/ghai2023lessons.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-ghai2023lessons" aria-expanded="false" aria-controls="pub-bib-ghai2023lessons" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-ghai2023lessons">
                   <pre class="pub-bib">@inproceedings{ghai2023lessons,
   title={Lessons Learned: Building a Privacy-Preserving Entity Resolution Adaptation of PPJoin using End-to-End Homomorphic Encryption},
@@ -230,8 +234,8 @@
                 <span class="pub-author"><span class="pub-author-me">Yixiang Yao</span>, Tanmay Ghai, Srivatsan Ravi, and Pedro Szekely.</span><br>
                 <span class="pub-book">In Proceedings of the 30th ACM International Conference on Information & Knowledge Management.</span><br>
                 <span class="pub-date">CIKM 2021.</span>
-                <a href="publications/yao2021amppere.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-yao2021amppere" aria-expanded="false" aria-controls="pub-bib-yao2021amppere" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/yao2021amppere.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-yao2021amppere" aria-expanded="false" aria-controls="pub-bib-yao2021amppere" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-yao2021amppere">
                   <pre class="pub-bib">@inproceedings{yao2021amppere,
   title={AMPPERE: A Universal Abstract Machine for Privacy-Preserving Entity Resolution Evaluation},
@@ -247,8 +251,8 @@
                 <span class="pub-author">Manling Li, Ying Lin, Tuan Manh Lai, Xiaoman Pan, Haoyang Wen, Sha Li, Zhenhailong Wang, Pengfei Yu, Lifu Huang, Di Lu, Qingyun Wang, Haoran Zhang, Qi Zeng, Chi Han, Zixuan Zhang, Yujia Qin, Xiaodan Hu, Nikolaus Parulian, Daniel Campos, Heng Ji, Brian Chen, Xudong Lin, Alireza Zareian, Amith Ananthram, Emily Allaway, Shih-Fu Chang, Kathleen McKeown, <span class="pub-author-me">Yixiang Yao</span>, Michael Spector, Mitchell DeHaven, Daniel Napierski, Marjorie Freedman, Pedro Szekely, Haidong Zhu, Ram Nevatia, Yang Bai, Yifan Wang, Ali Sadeghian, Haodi Ma, Daisy Zhe Wang.</span><br>
                 <span class="pub-book">In Proceedings of Text Analysis Conference Knowledge Base Population Workshop.</span><br>
                 <span class="pub-date">TAC-KBP 2020.</span>
-                <a href="publications/tac2020.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-li2020gaia" aria-expanded="false" aria-controls="pub-bib-li2020gaia" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/tac2020.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-li2020gaia" aria-expanded="false" aria-controls="pub-bib-li2020gaia" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-li2020gaia">
                   <pre class="pub-bib">@inproceedings{li2020gaia,
   title={GAIA at SMKBP 2020-a dockerlized multi-media multi-lingual knowledge extraction, clustering, temporal tracking and hypothesis generation system},
@@ -260,11 +264,11 @@
               </li>
               <li>
                 <span class="pub-title">KGTK: a toolkit for large knowledge graph manipulation and analysis.</span><br>
-                <span class="pub-author">Filip Ilievski, Daniel Garijo, Hans Chalupsky, Naren Teja Divvala, <span class="pub-author-me">Yixiang Yao</span>, Craig Rogers, Ronpeng Li, Jun Liu, Amandeep Singh, Daniel Schwabe, Pedro Szekely.<br>
+                <span class="pub-author">Filip Ilievski, Daniel Garijo, Hans Chalupsky, Naren Teja Divvala, <span class="pub-author-me">Yixiang Yao</span>, Craig Rogers, Ronpeng Li, Jun Liu, Amandeep Singh, Daniel Schwabe, Pedro Szekely.</span><br>
                 <span class="pub-book">In International Semantic Web Conference (Resource Track), pp. 278-293. Springer, Cham.</span><br>
                 <span class="pub-date">ISWC 2020.</span>
-                <a href="publications/ilievski2020kgtk.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-ilievski2020kgtk" aria-expanded="false" aria-controls="pub-bib-ilievski2020kgtk" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/ilievski2020kgtk.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-ilievski2020kgtk" aria-expanded="false" aria-controls="pub-bib-ilievski2020kgtk" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-ilievski2020kgtk">
                   <pre class="pub-bib">@inproceedings{ilievski2020kgtk,
   title={KGTK: a toolkit for large knowledge graph manipulation and analysis},
@@ -281,8 +285,8 @@
                 <span class="pub-author">Pedro Szekely, Daniel Garijo, Divij Bhatia, Jiasheng Wu, <span class="pub-author-me">Yixiang Yao</span>, Jay Pujara.</span><br>
                 <span class="pub-book">In Proceedings of the 10th International Conference on Knowledge Capture, pp. 267-270.</span><br>
                 <span class="pub-date">K-CAP 2019.</span>
-                <a href="publications/szekely2019t2wml.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-szekely2019t2wml" aria-expanded="false" aria-controls="pub-bib-szekely2019t2wml" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/szekely2019t2wml.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-szekely2019t2wml" aria-expanded="false" aria-controls="pub-bib-szekely2019t2wml" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-szekely2019t2wml">
                   <pre class="pub-bib">@inproceedings{szekely2019t2wml,
   title={T2WML: Table To Wikidata Mapping Language},
@@ -298,8 +302,8 @@
                 <span class="pub-author"><span class="pub-author-me">Yixiang Yao</span>, Pedro Szekely, Jay Pujara.</span><br>
                 <span class="pub-book">In Proceedings of the 5th Workshop on Data Science for Macro-modeling with Financial and Economic Datasets (Abstract paper), pp. 1-1.</span><br>
                 <span class="pub-date">SIGMOD-DSMM 2019.</span>
-                <a href="publications/yao2019extensible.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-yao2019extensible" aria-expanded="false" aria-controls="pub-bib-yao2019extensible" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/yao2019extensible.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-yao2019extensible" aria-expanded="false" aria-controls="pub-bib-yao2019extensible" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-yao2019extensible">
                   <pre class="pub-bib">@inproceedings{yao2019extensible,
   title={Extensible and Scalable Entity Resolution for Financial Datasets Using RLTK},
@@ -315,8 +319,8 @@
                 <span class="pub-author">Manling Li, Ying Lin, Ananya Subburathinam, Spencer Whitehead, Xiaoman Pan, Di Lu, Qingyun Wang, Tongtao Zhang, Lifu Huang, Heng Ji, Alireza Zareian, Hassan Akbari, Brian Chen, Bo Wu, Emily Allaway, Shih-Fu Chang, Kathleen McKeown, <span class="pub-author-me">Yixiang Yao</span>, Jennifer Chen, Eric Berquist, Kexuan Sun, Xujun Peng, Ryan Gabbard, Marjorie Freedman, Pedro Szekely, T.K. Satish Kumar, Arka Sadhu, Ram Nevatia, Miguel Rodriguez, Yifan Wang, Yang Bai, Ali Sadeghian, Daisy Zhe Wang.</span><br>
                 <span class="pub-book">In Proceedings of Text Analysis Conference Knowledge Base Population Workshop.</span><br>
                 <span class="pub-date">TAC-KBP 2019.</span>
-                <a href="publications/tac2019.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-li2019gaia" aria-expanded="false" aria-controls="pub-bib-li2019gaia" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/tac2019.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-li2019gaia" aria-expanded="false" aria-controls="pub-bib-li2019gaia" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-li2019gaia">
                   <pre class="pub-bib">@inproceedings{li2019gaia,
   title={GAIA at SM-KBP 2019-A Multi-media Multi-lingual Knowledge Extraction and Hypothesis Generation System.},
@@ -331,8 +335,8 @@
                 <span class="pub-author">Craig A Knoblock, Pedro Szekely, Eleanor Fink, Duane Degler, David Newbury, Robert Sanderson, Kate Blanch, Sara Snyder, Nilay Chheda, Nimesh Jain, Ravi Raju Krishna, Nikhila Begur Sreekanth, <span class="pub-author-me">Yixiang Yao</span>.</span><br>
                 <span class="pub-book">In International Semantic Web Conference, pp. 263-279. Springer, Cham.</span><br>
                 <span class="pub-date">ISWC 2017.</span>
-                <a href="publications/knoblock2017lessons.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-knoblock2017lessons" aria-expanded="false" aria-controls="pub-bib-knoblock2017lessons" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/knoblock2017lessons.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-knoblock2017lessons" aria-expanded="false" aria-controls="pub-bib-knoblock2017lessons" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-knoblock2017lessons">
                   <pre class="pub-bib">@inproceedings{knoblock2017lessons,
   title={Lessons learned in building linked data for the American art collaborative},
@@ -349,8 +353,8 @@
                 <span class="pub-author">Craig A Knoblock, Pedro A Szekely, Eleanor E Fink, Duane Degler, David Newbury, Robert Sanderson, Kate Blanch, Sara Snyder, Nilay Chheda, Nimesh Jain, Ravi Raju Krishna, Nikhila Begur Sreekanth, <span class="pub-author-me">Yixiang Yao</span>.</span><br>
                 <span class="pub-book">In International Semantic Web Conference (Posters, Demos & Industry Tracks).</span><br>
                 <span class="pub-date">ISWC 2017.</span>
-                <a href="publications/knoblock2017demonstration.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-knoblock2017demonstration" aria-expanded="false" aria-controls="pub-bib-knoblock2017demonstration" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/knoblock2017demonstration.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-knoblock2017demonstration" aria-expanded="false" aria-controls="pub-bib-knoblock2017demonstration" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-knoblock2017demonstration">
                   <pre class="pub-bib">@inproceedings{knoblock2017demonstration,
   title={A Demonstration of Tools for Building Linked Data for the American Art Collaborative.},
@@ -363,8 +367,8 @@
                 <span class="pub-author"><span class="pub-author-me">Yixiang Yao</span>, Jinghua Gao, Ying Gong.</span><br>
                 <span class="pub-book">Emerging Technologies for Information Systems, Computing, and Management. pp. 297-304. Springer, New York, NY.</span><br>
                 <span class="pub-date">ETICM 2013.</span>
-                <a href="publications/yao2013dynamic.pdf" class="btn-link"><i class="fa fa-file-alt"></i></a>
-                <a data-toggle="collapse" href="#pub-bib-yao2013dynamic" aria-expanded="false" aria-controls="pub-bib-yao2013dynamic" class="btn-link"><i class="fa fa-quote-right"></i></a>
+                <a href="publications/yao2013dynamic.pdf" class="btn-link" aria-label="Paper"><i class="fa fa-file-alt"></i></a>
+                <a data-toggle="collapse" href="#pub-bib-yao2013dynamic" aria-expanded="false" aria-controls="pub-bib-yao2013dynamic" class="btn-link" aria-label="BibTeX"><i class="fa fa-quote-right"></i></a>
                 <div class="collapse" id="pub-bib-yao2013dynamic">
                   <pre class="pub-bib">@incollection{yao2013dynamic,
   title={Dynamic USBKEY System on Multiple Verification Algorithm},
@@ -386,11 +390,11 @@
             <ul>
               <li>
                 <span class="">RLTK: Record Linkage Toolkit</span>
-                <a href="https://github.com/usc-isi-i2/rltk" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/usc-isi-i2/rltk" target="_blank" class="btn-link" aria-label="Project page"><i class="fas fa-external-link-alt"></i></a>
               </li>
               <li>
                 <span class="">Pyrallel: Yet another easy-to-use python3 parallel library for humans.</span>
-                <a href="https://github.com/usc-isi-i2/pyrallel" target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/usc-isi-i2/pyrallel" target="_blank" class="btn-link" aria-label="Project page"><i class="fas fa-external-link-alt"></i></a>
               </li>
             </ul>
           </div>
@@ -410,33 +414,34 @@
           </div>
 
           <div id="tbd" class="mt-5">
-            <p class="prompt"><span class="prompt-name mt-3">yyx@lab</span><span class="prompt-location prompt-cursor"> ~ $ </span>
+            <p class="prompt"><span class="prompt-name mt-3">yyx@lab</span><span class="prompt-location prompt-cursor"> ~ $ </span></p>
           </div>
 
           <div class="col col-12 padding"></div>
+        </div>
       </div>
     </div>
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col col-9 status-bar status-bar-left"><a href="https://github.com/GreatYYX/term-homepage">Built with <i class="fa fa-heart"></i> by YYX</a></div>
-          <div class="col col-3 status-bar status-bar-right" id="theme-switch">Dark Mode</div>
+          <div class="col status-bar status-bar-left"><span class="status-session d-none d-sm-inline">[yyx]</span> <a href="https://github.com/GreatYYX/term-homepage">built with <i class="fa fa-heart"></i> by yyx</a></div>
+          <div class="col-auto status-bar status-bar-right" id="theme-switch">[ ◐ dark ]</div>
         </div>
       </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64342434-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q77322KLN5"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-64342434-1');
+      gtag('config', 'G-Q77322KLN5');
     </script>
   </body>
 </html>
