@@ -36,6 +36,16 @@
     </script>
   </head>
   <body>
+    <!-- gamma curve for the ASCII picture in light mode, used by style.css -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <filter id="pp-light" color-interpolation-filters="sRGB">
+        <feComponentTransfer>
+          <feFuncR type="gamma" exponent="1.5"/>
+          <feFuncG type="gamma" exponent="1.5"/>
+          <feFuncB type="gamma" exponent="1.5"/>
+        </feComponentTransfer>
+      </filter>
+    </svg>
 
     <div class="container main">
       <div class="row">
@@ -68,7 +78,7 @@
                   <a href="https://www.linkedin.com/in/yxyao/" class="btn-link" aria-label="LinkedIn"><i class="fab fa-lg fa-linkedin"></i></a>
                 </p>
               </div>
-              <div class="col col-12 col-lg-4 text-left text-lg-right"><div id="profile-picture"></div></div>
+              <div class="col col-12 col-lg-4 text-left text-lg-right"><div class="term-window"><div id="profile-picture"></div></div></div>
             </div><!--row-->
           </div>
 

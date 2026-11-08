@@ -124,12 +124,28 @@ pre {
   letter-spacing: 0.3em;
   text-align: right;
   white-space: pre-line;
+  padding: 10px;
 }
 
-/* simple frame around the ASCII picture in light mode */
+/* light mode: thin light-colored glyphs lose detail on a light background (e.g. the
+   gray glasses over light skin). Bold glyphs, a gamma curve that darkens mid tones
+   while leaving the light wall light (#pp-light in index.html), and extra saturation
+   (warm skin vs. neutral gray glasses) bring the detail back. The element has no
+   background of its own, so the page background stays light. */
 [data-theme="light"] #profile-picture {
-  border: 1px solid var(--color-gray-dark);
-  padding: 8px;
+  font-weight: 700;
+  filter: url(#pp-light) saturate(2);
+}
+
+/* single-color terminal dialog box (like `dialog`/whiptail) around the ASCII
+   picture: double-line border and a hard offset shadow. It sits on a wrapper so the
+   picture's light-mode filter doesn't recolor the frame. */
+.term-window {
+  --dialog-color: var(--color-foreground);
+  display: inline-block;
+  text-align: left;
+  border: 4px double var(--dialog-color);
+  box-shadow: 8px 8px 0 var(--dialog-color);
 }
 
 ul {
